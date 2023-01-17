@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2: Student Registration Form</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        form {
+            margin: auto;
+        }
+
+        form table {
+            margin: auto;
+        }
+
+        form table tr {
+            line-height: 24px;
+        }
+
+        #student-record {
+            border: 2px solid red;
+        }
+
+        footer {
+            /* border: 2px solid red; */
+            font-weight: 900;
+            display: inline-block;
+            position: fixed;
+            left: 87%;
+            top: 96.5%;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="center">
+            <h1>Student Registration Form</h1>
+        </header>
+
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="firstname">Name<span>:</span></label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" id="firstname">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="phonenumber">Phone No<span>:</span></label>
+                    </td>
+                    <td>
+                        <input type="number" name="phonenumber" id="phonenumber">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="dob"> Date of Birth <span>:</span></label>
+                    </td>
+                    <td>
+                        <input type="date" id="dob" name="dob">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Address <span>:</span></label>
+                    </td>
+                    <td>
+                        <textarea name="address" id="" cols="25" rows="6"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Gender <span>:</span></label>
+                    </td>
+                    <td>
+                        <input type="radio" name="male" /> Male
+                        <input type="radio" name="male" /> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label> Course <span>:</span> </label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="" disabled selected hidden>Select drink</option>
+                            <option value="chandigarh">chandigarh</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Kerela">Kerela</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="hobby"> Hobbies <span>:</span></label><br>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="music" name="music">
+                        <label for="music">Music</label><br>
+
+                        <input type="checkbox" id="sports" name="sports">
+                        <label for="sports">Sports</label><br>
+
+                        <input type="checkbox" id="Reading" name="Reading">
+                        <label for="Reading">Reading</label><br>
+
+                        <input type="checkbox" id="Chess" name="Chess">
+                        <label for="Chess">Chess</label><br>
+
+                        <input type="checkbox" id="GYM" name="GYM">
+                        <label for="GYM">GYM</label><br>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit"></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                            type="reset"></td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+            <!-- student record -->
+            <table id="student-record">
+                <caption>
+                    <h2 class="center">HTML TABLE</h2>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Name</th>
+                        <th>PhoneNo.</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Interest</th>
+                    <tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">1</td>
+                        <td rowspan="3">Sunil Kumar</td>
+                        <td rowspan="3">123-4-567</td>
+                        <td rowspan="3">Male</td>
+                        <td rowspan="3">12/2/1998</td>
+                        <td>Music</td>
+                    <tr>
+                        <td>
+                            Dance
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            cooking
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3">2</td>
+                        <td rowspan="3">Rajat Sharma</td>
+                        <td rowspan="3">456-6-789</td>
+                        <td rowspan="3">Male</td>
+                        <td rowspan="3">22/6/2000</td>
+                        <td>GYM</td>
+                    <tr>
+                        <td>
+                            Sports
+                        </td>
+                    </tr>
+                </tbody>
+        </form>
+    </main>
+
+    <footer>
+        <span>Gemini Solutions Pvt. Ltd.</span>
+    </footer>
+
+
+
+</body>
+
+</html>
